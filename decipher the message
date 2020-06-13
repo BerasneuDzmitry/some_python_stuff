@@ -1,0 +1,14 @@
+#Расшифровываем послание "I am the secret message!"
+
+garbled = "!XeXgXaXsXsXeXmX XtXeXrXcXeXsX XeXhXtX XmXaX XI"
+message = garbled[::-2]
+print (message)
+
+#Расшифровываем послание "I am another secret message!"
+
+garbled2 = "IXXX aXXmX aXXXnXoXXXXXtXhXeXXXXrX sXXXXeXcXXXrXeXt mXXeXsXXXsXaXXXXXXgXeX!XX"
+def not_x(i):
+    if i != "X":
+        return True
+message2 = list(filter(not_x, garbled2))
+print ("".join(message2))
